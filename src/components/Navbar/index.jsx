@@ -26,42 +26,26 @@ const Navbar = ({ navLinks, initialActive = false }) => {
       <button
         className={`navbar-toggle ${isMobileMenuOpen ? 'active' : ''}`}
         onClick={toggleMobileMenu}
-        aria-label={isMobileMenuOpen ? t('Close menu') : t('Open menu')}
-        aria-expanded={isMobileMenuOpen}
       >
-        <span className="navbar-toggle-icon" aria-hidden="true">☰</span>
+        <span className="navbar-toggle-icon">☰</span>
       </button>
 
-      <ul
-        className={`navbar-list ${isMobileMenuOpen ? 'active' : ''}`}
-        role="menu"
-        aria-hidden={!isMobileMenuOpen}
-      >
+      <ul className={`navbar-list ${isMobileMenuOpen ? 'active' : ''}`}>
         {navLinks.map((link, index) => (
-          <li key={index} role="none">
-            <Link 
-              to={link.to} 
-              onClick={closeMobileMenu} 
-              role="menuitem"
-              aria-label={t(link.label)}
-            >
+          <li key={index}>
+            <Link to={link.to} onClick={closeMobileMenu}>
               {t(link.label)}
             </Link>
           </li>
         ))}
 
-        <li className="mobile-buttons" role="none">
-          <Button 
-            to="/login" 
-            icon={<i className="fa-solid fa-user" aria-hidden="true"></i>} 
-            onClick={closeMobileMenu}
-            aria-label={t('Go to dashboard')}
-          >
+        <li className="mobile-buttons">
+          <Button to="/login" icon={<i className="fa-solid fa-user"></i>} onClick={closeMobileMenu}>
             {t('dashboard')}
           </Button>
         </li>
 
-        <li role="none">
+        <li>
           <LanguageSelector />
         </li>
       </ul>
