@@ -39,7 +39,7 @@ const Header = () => {
           <Navbar navLinks={navLinks} isMobileMenuOpen={isMobileMenuOpen} toggleMobileMenu={toggleMobileMenu} />
         </div>
         <div className="header-right">
-          <Button to="/login" icon={<i className="fa-solid fa-user"></i>}>{t('dashboard')}</Button>
+          <Button to="/" icon={<i className="fa-solid fa-user"></i>}>{t('dashboard')}</Button>
           <LanguageSelector onChangeLanguage={changeLanguage} />
         </div>
       </div>

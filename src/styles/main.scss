@@ -1,4 +1,4 @@
-@import './variables';
-@import './mixins';
-@import './global';
-@import './reset';
+@use './variables' as *;
+@use './mixins' as *;
+@use './global' as *;
+@use './reset' as *;
