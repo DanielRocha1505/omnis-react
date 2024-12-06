@@ -1,0 +1,136 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.background {
+    position: fixed;
+    z-index: 3;
+    top: 300px;
+}
+
+.hero-banner {
+    position: relative;
+    height: 100vh;
+    color: white;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    overflow: hidden;
+
+    @include mobile {
+        padding: 0 20px;
+        height: 90vh;
+    }
+    
+    .hero-content {
+      z-index: 2;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      @include mobile {
+        padding: 0 20px;
+      }
+  
+      .hero-title {
+        font-size: 2.5rem;
+        -webkit-text-stroke: 0.5px rgb(26, 26, 26);
+
+        @include mobile {
+          max-width: 400px;
+          font-size: 2.4rem;
+          line-height: 1.0;
+        }
+      }
+  
+      .hero-description {
+        font-size: 4.5rem;
+        display: inline-block;
+        white-space: nowrap;
+        font-weight: bold;
+        -webkit-text-stroke: 0.5px rgb(26, 26, 26);
+
+        .typed-text {
+          display: inline-block;
+          border-right: 12px solid $text-color;
+          animation: typing 4s steps(30) 2s 1 normal both, blink 1.5s step-end infinite;
+          overflow: hidden;
+
+          @include mobile {
+            border-right: 2px solid $text-color;
+          }
+        }
+        
+        @keyframes typing {
+          from {
+            width: 0;
+          }
+          to {
+            width: 100%;
+          }
+        }
+        
+        @keyframes blink {
+          50% {
+            border-color: transparent; /* Faz o cursor piscar */
+          }
+        }
+
+        @include mobile {
+            max-width: 400px;
+            font-size: 1.5rem;
+            margin-top: 20px;
+            line-height: 1;
+            white-space: no-wrap;
+        }
+      }
+    }
+  }
+
+  .animated-ghost {
+    position: absolute;
+    font-size: 100px;
+    color: rgba(255, 0, 0, 0.5);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: move-ghost 30s linear infinite;
+    z-index: -5;
+    pointer-events: none;
+
+    .FillGhost {
+      width: 250px;
+    }
+
+    @keyframes ficarRGB {
+      0% {
+        filter: hue-rotate(0deg);
+      }
+      100% {
+        filter: hue-rotate(360deg);
+      }
+    }
+  }
+  
+  @keyframes move-ghost {
+    0% {
+      transform: translate(-50%, -100%);
+    }
+    25% {
+      transform: translate(20vw, 10vh);
+    }
+    50% {
+      transform: translate(20vw, 60vh);
+    }
+    75% {
+      transform: translate(-20vw, 40vh);
+    }
+    100% {
+      transform: translate(-50%, -100%);
+    }
+  }
+  

@@ -1,0 +1,57 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.patners-title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.card-wrapper {
+    display: flex;
+    height: 250px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.p-carousel-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.p-carousel-container {
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile {
+        width: 400px;
+    }
+}
+
+.p-carousel-indicators {
+    margin-top: 20px;
+    gap: 20px;
+    color: $primary-color;
+
+    @include mobile {
+        margin-top: 25px;
+    }
+}
+
+.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button  {
+    background-color: $highlight-color;
+}
+
+.p-carousel .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next {
+    color: $highlight-color;
+}
+
+.p-carousel-indicator button {
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+}

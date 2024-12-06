@@ -1,0 +1,11 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.prices-section {
+    margin-top: 80px;
+}
+
+.prices-title {
+    font-size: 3rem;
+    text-align: center;
+}

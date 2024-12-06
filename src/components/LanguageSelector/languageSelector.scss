@@ -1,0 +1,56 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.language-selector {
+    position: relative;
+    display: inline-block;
+    margin-top: 5px;
+  }
+  
+  .language-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .language-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .language-menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: $background-color;
+    border: 1px solid $background-color;
+    border-radius: 15px;
+    list-style: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+
+    @include mobile {
+      left: -70px;
+    }
+  }
+  
+  .language-menu li {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .language-menu li:hover {
+    background-color: $highlight-color;
+  }
+  
+  .language-menu img {
+    margin-right: 10px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50px;
+    height: 40px;
+  }
+  

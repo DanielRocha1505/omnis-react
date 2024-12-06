@@ -1,0 +1,97 @@
+{
+  "navbar": {
+    "home": "Início",
+    "features": "Recursos",
+    "prices": "Preços",
+    "faq": "FAQ",
+    "discord": "Discord",
+    "api": "API"
+  },
+  "dashboard": "Painel",
+  "heroBanner": {
+    "title": "Elevando a detecção contra cheaters",
+    "subtitle": "A outro patamar..."
+  },
+  "features": {
+    "title": "Recursos",
+    "webPanel": {
+      "title": "Painel Web",
+      "description": "O Fiveguard possui um painel web com sistema de configuração em nuvem que permite gerenciar suas licenças e compartilhá-las com sua equipe sem precisar compartilhar suas senhas."
+    },
+    "antiOnScreenMenu": {
+      "title": "Anti Menu na tela",
+      "description": "O Fiveguard possui uma IA avançada que tira capturas de tela a cada período determinado para verificar se há menus de lua, banindo cheaters de forma eficaz."
+    },
+    "safeEventsVerification": {
+      "title": "Sistema de verificação de eventos seguros",
+      "description": "O Fiveguard também conta com um sistema de eventos seguros que torna impossível a execução de eventos por hackers ou o spawn de dinheiro."
+    }
+  },
+  "suportedGames": {
+    "title": "Jogos Suportados"
+  },
+  "patners": {
+    "title": "Veja abaixo alguns de nossos parceiros:"
+  },
+  "prices": {
+    "title": "Preços",
+    "pessoal": {
+      "title": "Pessoal",
+      "benefits": {
+        "acesso_completo_ao_painel": "Acesso completo ao painel",
+        "suporte_24_7": "Suporte 24/7",
+        "sem_limites_de_usuarios": "Sem limites de usuários",
+        "acesso_a_recursos_exclusivos": "Acesso a recursos exclusivos",
+        "atualizacoes_constantes": "Atualizações constantes"
+      }
+    },
+    "profissional": {
+      "title": "Profissional",
+      "benefits": {
+        "acesso_completo_ao_painel": "Acesso completo ao painel",
+        "suporte_24_7": "Suporte 24/7",
+        "recursos_avancados": "Recursos avançados",
+        "prioridade_no_atendimento": "Prioridade no atendimento",
+        "atualizacoes_constantes": "Atualizações constantes"
+      }
+    },
+    "grupo": {
+      "title": "Grupo",
+      "benefits": {
+        "acesso_completo_ao_painel": "Acesso completo ao painel",
+        "suporte_24_7": "Suporte 24/7",
+        "sem_limites_de_usuarios": "Sem limites de usuários",
+        "acesso_a_recursos_exclusivos": "Acesso a recursos exclusivos",
+        "atualizacoes_constantes": "Atualizações constantes"
+      }
+    },
+    "preco_pessoal": "R$ 49,99/mês",
+    "preco_vitalicio_pessoal": "R$ 499,99 vitalício",
+    "preco_profissional": "R$ 99,99/mês",
+    "preco_vitalicio_profissional": "R$ 999,99 vitalício",
+    "preco_grupo": "R$ 199,99/mês",
+    "preco_vitalicio_grupo": "R$ 1999,99 vitalício",
+    "buttonText": "Adquira AGORA!"
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "faq1_question": "Por que usar o Omnis?",
+    "faq1_answer": "O Omnis pode determinar se um jogador está trapaceando mais rapidamente, mais precisamente e muito melhor do que as outras ferramentas. O Omnis possui detecções avançadas para muitos cheats e amplas detecções para cheats personalizados.",
+    "faq2_question": "Quão seguros estão meus dados com o Omnis?",
+    "faq2_answer": "Seus dados estão o mais seguros possível, protegemos sua senha com Argon 2 e toda a nossa segurança está alinhada com as tecnologias atuais de cibersegurança. Seus dados são transferidos por canais criptografados, portanto, é impossível para um invasor ler seus dados durante a transferência.",
+    "faq3_question": "O que nós registramos no Omnis?",
+    "faq3_answer": "Aqui no Omnis registramos o mínimo para garantir que você tenha um resultado de análise extremamente detalhado. Armazenamos tipos de dados como endereços de IP, id do hardware, programas usados recentemente, memória de processos no computador, bem como atividades de login. Tudo isso é muito importante para determinar se um jogador pode estar trapaceando ou não, e tentamos registrar menos a cada atualização.",
+    "faq4_question": "O que o Omnis detecta?",
+    "faq4_answer": "O Omnis detecta a grande maioria dos cheats que você pode encontrar em jogadores no seu servidor. Estamos constantemente nos esforçando para melhorar nossos excelentes métodos de detecção já existentes. Temos detecções para quase todos os cheats que você possa imaginar, e nossa detecção avançada de strings cuidará do resto.",
+    "faq5_question": "Que métodos de pagamento nós aceitamos?",
+    "faq5_answer": "Aceitamos Stripe para cartões de débito/crédito e também o Paypal e em breve adicionaremos mais! Provavelmente iremos suportar bitcoin em algum momento no futuro. Todas as transações são feitas com segurança através do stripe e paypal, então não há necessidade de se preocupar com violações. Não registramos nenhuma informação de pagamento.",
+    "faq6_question": "Quanto tempo demora para escanear um computador?",
+    "faq6_answer": "O Omnis detecta a grande maioria dos cheats que você pode encontrar em jogadores no seu servidor. Estamos constantemente nos esforçando para melhorar nossos excelentes métodos de detecção já existentes. Temos detecções para quase todos os cheats que você possa imaginar, e nossa detecção avançada de strings cuidará do resto."
+  },
+  "footer": {
+    "legaltext": "Legal"
+  },
+  "copyright": {
+    "text": "Copyright © 2024 Omnis. Todos os direitos reservados."
+  }
+}

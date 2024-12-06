@@ -1,0 +1,28 @@
+@use '../../styles/variables' as *;
+
+.btn {
+    width: 120px;
+    font-family: Poppins;
+    background-color: $secondary-color;
+    color: $white-color;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    &-icon {
+        svg {
+            vertical-align: middle;
+        }
+    }
+
+    &:hover {
+        background-color: $hover-button;
+        transition: 0.5s;
+    }
+}

@@ -1,0 +1,11 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.faqSection {
+    margin-top: 100px;
+
+    .faqSection-title {
+        font-size: 3rem;
+        text-align: center;
+    }
+}

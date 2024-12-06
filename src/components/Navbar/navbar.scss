@@ -1,0 +1,130 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.navbar {
+  .navbar-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    z-index: 999;
+  }
+
+  .language-selector {
+    display: none;
+
+    @include mobile {
+      display: inline-block;
+    }
+  }
+
+  .navbar-list a {
+    color: $white-color;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 10px;
+    position: relative;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $highlight-color;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0%;
+      height: 2px;
+      background-color: $highlight-color;
+      transition: width 0.3s ease, left 0.3s ease;
+    }
+
+    &:hover:after {
+      width: 100%;
+      left: 0;
+    }
+  }
+
+  .navbar-toggle {
+    display: none;  
+  }
+
+  .mobile-buttons {
+    display: none;  
+  }
+
+  &.no-dropdown {  
+    .navbar-list {
+      display: flex;  
+      flex-direction: row; 
+      gap: 20px;
+    }
+
+    .navbar-toggle {
+      display: none;  
+    }
+
+    .mobile-buttons {
+      display: none; 
+    }
+  }
+
+  @include mobile {
+    .navbar-list {
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+      background-color: $primary-color;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      width: 100%;
+      padding: 10px;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+    }
+
+    .navbar-list.active {
+      display: flex;
+      height: 520px;
+      max-height: 520px;
+      opacity: 1;
+    }
+
+    .navbar-toggle {
+      display: block;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+    }
+
+    .navbar-toggle-icon {
+      font-size: 2rem;
+      color: $white-color;
+    }
+
+    .navbar-toggle.active + .navbar-list {
+      display: flex;
+    }
+
+    .mobile-buttons a:hover:after {
+      height: 0;
+    }
+
+    .mobile-buttons {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+
+      .btn {
+        width: 100%;
+      }
+    }
+
+  }
+}

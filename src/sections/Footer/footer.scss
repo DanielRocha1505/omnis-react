@@ -1,0 +1,114 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.footer {
+  background-color: $background-color;
+  color: $text-color;
+  padding: 20px 0;
+  width: 100%;
+  margin-top: 100px;
+
+  .footer-contain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+
+    @include mobile {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  .footer-left {
+    .footer-logo {
+      width: 50px;
+      height: auto;
+    }
+  }
+
+  .footer-center {
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include mobile {
+      .footer-links {
+        justify-content: center;
+        margin-bottom: 20px;
+
+        .navbar .navbar-toggle {
+            display: none;
+        }
+
+        .navbar-list {
+            display: flex;
+            position: relative;
+            top: 0;
+            background-color: $background-color;
+            padding: 10px 20px;
+
+            @extend .active !optional;
+        }
+        
+      }
+    }
+  }
+
+  .footer-right {
+    .back-to-top {
+      background-color: $secondary-color;
+      color: $white-color;
+      border: none;
+      padding: 5px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.5rem;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: $hover-button;
+      }
+    }
+
+    @include mobile {
+      margin-top: 20px;
+    }
+  }
+
+  .footer-socials {
+    text-align: center;
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    a {
+      margin: 0 10px;
+      color: $text-color;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.copyright-text {
+    margin-top: 20px;
+    text-align: center;
+}

@@ -1,0 +1,97 @@
+{
+  "navbar": {
+    "home": "Home",
+    "features": "Features",
+    "prices": "Pricing",
+    "faq": "FAQ",
+    "discord": "Discord",
+    "api": "API"
+  },
+  "dashboard": "Dashboard",
+  "heroBanner": {
+    "title": "Increasing detection against cheaters",
+    "subtitle": "To another level..."
+  },
+  "features": {
+    "title": "Features",
+    "webPanel": {
+      "title": "Web Panel",
+      "description": "Fiveguard has a web panel with a cloud config system that allows you to manage your licenses and share them with your staff without sharing your passwords."
+    },
+    "antiOnScreenMenu": {
+      "title": "Anti On-Screen Menu",
+      "description": "Fiveguard has an advanced AI that takes screenshots at set intervals to check for lua menus, effectively banning cheaters."
+    },
+    "safeEventsVerification": {
+      "title": "Safe Events Verification System",
+      "description": "Fiveguard also has a safe events system that prevents hackers from executing events or spawning money."
+    }
+  },
+  "suportedGames": {
+    "title": "Supported Games"
+  },
+  "patners": {
+    "title": "Check out some of our partners below:"
+  },
+  "prices": {
+    "title": "Pricing",
+    "pessoal": {
+      "title": "Personal",
+      "benefits": {
+        "acesso_completo_ao_painel": "Full access to the dashboard",
+        "suporte_24_7": "24/7 support",
+        "sem_limites_de_usuarios": "No user limits",
+        "acesso_a_recursos_exclusivos": "Access to exclusive features",
+        "atualizacoes_constantes": "Constant updates"
+      }
+    },
+    "profissional": {
+      "title": "Professional",
+      "benefits": {
+        "acesso_completo_ao_painel": "Full access to the dashboard",
+        "suporte_24_7": "24/7 support",
+        "recursos_avancados": "Advanced features",
+        "prioridade_no_atendimento": "Priority support",
+        "atualizacoes_constantes": "Constant updates"
+      }
+    },
+    "grupo": {
+      "title": "Group",
+      "benefits": {
+        "acesso_completo_ao_painel": "Full access to the dashboard",
+        "suporte_24_7": "24/7 support",
+        "sem_limites_de_usuarios": "No user limits",
+        "acesso_a_recursos_exclusivos": "Access to exclusive features",
+        "atualizacoes_constantes": "Constant updates"
+      }
+    },
+    "preco_pessoal": "$12.99/month",
+    "preco_vitalicio_pessoal": "or $79.99 lifetime",
+    "preco_profissional": "$29.99/month",
+    "preco_vitalicio_profissional": "or $79.99 lifetime",
+    "preco_grupo": "$29.99/month",
+    "preco_vitalicio_grupo": "or $179.99 lifetime",
+    "buttonText": "Get it NOW!"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "faq1_question": "Why use Omnis?",
+    "faq1_answer": "Omnis can determine if a player is cheating faster, more accurately, and much better than other tools. Omnis has advanced detections for many cheats and broad detections for custom cheats.",
+    "faq2_question": "How secure is my data with Omnis?",
+    "faq2_answer": "Your data is as secure as possible, we protect your password with Argon 2, and all our security is aligned with current cybersecurity technologies. Your data is transmitted via encrypted channels, so it's impossible for an attacker to read your data during transfer.",
+    "faq3_question": "What do we log in Omnis?",
+    "faq3_answer": "At Omnis, we log the minimum necessary to ensure that you get an extremely detailed analysis result. We store types of data such as IP addresses, hardware IDs, recently used programs, process memory on the computer, and login activities. All of this is very important to determine if a player may be cheating, and we try to log less with each update.",
+    "faq4_question": "What does Omnis detect?",
+    "faq4_answer": "Omnis detects the vast majority of cheats you can find in players on your server. We are constantly striving to improve our already excellent detection methods. We have detections for almost all cheats you can imagine, and our advanced string detection will take care of the rest.",
+    "faq5_question": "What payment methods do we accept?",
+    "faq5_answer": "We accept Stripe for debit/credit cards and also PayPal, and we will soon add more! We will probably support Bitcoin at some point in the future. All transactions are securely made through Stripe and PayPal, so there's no need to worry about breaches. We don't log any payment information.",
+    "faq6_question": "How long does it take to scan a computer?",
+    "faq6_answer": "Omnis detects the vast majority of cheats you can find in players on your server. We are constantly striving to improve our already excellent detection methods. We have detections for almost all cheats you can imagine, and our advanced string detection will take care of the rest."
+  },
+  "footer": {
+    "legaltext": "Cool"
+  },
+  "copyright": {
+    "text": "Copyright © 2024 Omnis. All rights reserved."
+  }
+}
