@@ -26,12 +26,12 @@ const Card = ({
 
   if (type === 1) {
     return (
-      <div className={cardClass}>
-        <div className="card-icon">
+      <div className={cardClass} role="region" aria-labelledby={`card-title-${title}`}>
+        <div className="card-icon" aria-hidden="true">
           <i className={icon}></i>
         </div>
         <div className="card-content">
-          <h2 className="card-title">{title}</h2>
+          <h2 id={`card-title-${title}`} className="card-title">{title}</h2>
           <p className="card-description">{description}</p>
         </div>
       </div>
@@ -40,10 +40,15 @@ const Card = ({
 
   if (type === 2) {
     return (
-      <div className={cardClass}>
-        <div className="card-image" style={{ backgroundImage: `url(${image})` }}></div>
+      <div className={cardClass} role="region" aria-labelledby={`card-title-${title}`}>
+        <div
+          className="card-image"
+          style={{ backgroundImage: `url(${image})` }}
+          role="img"
+          aria-label={title}
+        ></div>
         <div className="card-overlay">
-          <h2 className="card-title">{title}</h2>
+          <h2 id={`card-title-${title}`} className="card-title">{title}</h2>
         </div>
       </div>
     );
@@ -51,10 +56,15 @@ const Card = ({
 
   if (type === 3) {
     return (
-      <div className={cardClass}>
-        <div className="card-image" style={{ backgroundImage: `url(${image})` }}></div>
+      <div className={cardClass} role="region" aria-labelledby={`card-title-${title}`}>
+        <div
+          className="card-image"
+          style={{ backgroundImage: `url(${image})` }}
+          role="img"
+          aria-label={title}
+        ></div>
         <div className="card-content">
-          <h2 className="card-title">{title}</h2>
+          <h2 id={`card-title-${title}`} className="card-title">{title}</h2>
           <p className="card-description">{description}</p>
         </div>
       </div>
@@ -63,12 +73,12 @@ const Card = ({
 
   if (type === 4) {
     return (
-      <div className={cardClass}>
-        <div className="card-title">{title}</div>
+      <div className={cardClass} role="region" aria-labelledby={`card-title-${title}`}>
+        <div id={`card-title-${title}`} className="card-title">{title}</div>
         
         <div className="card-price-main">
-          <span className="price">{price}</span>
-          <span className="price-lifetime">{priceLifetime}</span>
+          <span className="price" aria-label={`Preço: ${price}`}>{price}</span>
+          <span className="price-lifetime" aria-label={`Preço vitalício: ${priceLifetime}`}>{priceLifetime}</span>
         </div>
 
         <div className="card-benefits">
@@ -78,7 +88,7 @@ const Card = ({
         </div>
 
         <div className="card-button">
-          <Button to={buttonLink}>{buttonText}</Button>
+          <Button to={buttonLink} aria-label={`Saiba mais sobre ${title}`}>{buttonText}</Button>
         </div>
       </div>
     );

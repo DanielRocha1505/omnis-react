@@ -19,7 +19,16 @@ const LanguageSelector = ({ onChangeLanguage }) => {
 
   return (
     <div className="language-selector">
-      <button className="language-toggle" onClick={toggleMenu}>
+      <button
+        className="language-toggle"
+        onClick={toggleMenu}
+        aria-label={
+          isMenuOpen
+            ? 'Fechar menu de seleção de idioma'
+            : 'Abrir menu de seleção de idioma'
+        }
+        aria-expanded={isMenuOpen}
+      >
         <img
           src={i18n.language === 'pt' ? languaguePathPtBr : languaguePathEn}
           alt={`Selecionar idioma: ${i18n.language === 'pt' ? 'Português' : 'Inglês'}`}
@@ -28,13 +37,35 @@ const LanguageSelector = ({ onChangeLanguage }) => {
       </button>
 
       {isMenuOpen && (
-        <ul className="language-menu">
-          <li onClick={() => handleLanguageChange('pt')}>
-            <img src={languaguePathPtBr} alt="Bandeira do Brasil" className="flag-icon" />
+        <ul
+          className="language-menu"
+          role="menu"
+          aria-label="Seleção de idioma"
+        >
+          <li
+            role="menuitem"
+            tabIndex="0"
+            onClick={() => handleLanguageChange('pt')}
+            aria-label="Selecionar Português"
+          >
+            <img
+              src={languaguePathPtBr}
+              alt="Bandeira do Brasil"
+              className="flag-icon"
+            />
             Português
           </li>
-          <li onClick={() => handleLanguageChange('en')}>
-            <img src={languaguePathEn} alt="Bandeira dos EUA" className="flag-icon" />
+          <li
+            role="menuitem"
+            tabIndex="0"
+            onClick={() => handleLanguageChange('en')}
+            aria-label="Selecionar Inglês"
+          >
+            <img
+              src={languaguePathEn}
+              alt="Bandeira dos EUA"
+              className="flag-icon"
+            />
             English
           </li>
         </ul>
